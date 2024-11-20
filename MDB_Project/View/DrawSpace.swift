@@ -26,7 +26,7 @@ struct DrawingViewRepresentable : UIViewRepresentable {
     var toolPicker = PKToolPicker()
     
     func makeUIView(context: Context) -> PKCanvasView {
-        canvas.wrappedValue.backgroundColor = .black
+        canvas.wrappedValue.backgroundColor = .systemGray
         canvas.wrappedValue.drawingPolicy = .anyInput
         showToolPicker()
         return canvas.wrappedValue
